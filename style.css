@@ -39,8 +39,8 @@ main{
 }
 
 .card-container{
-    width: 35rem;
-    height: 60rem;
+    width: 30rem;
+    height: 64rem;
     border-radius: 1rem;
     background-color: white;
     display: flex;
