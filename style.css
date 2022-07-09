@@ -1,0 +1,182 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    /* colours */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --main-font: 'Red Hat Display', sans-serif;
+
+    /* font styles */
+    --medium-w: 500;
+    --bold-w: 700;
+    --black-w: 900;
+}
+
+html,body{
+    font-size: 65%;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    margin: 0;
+}
+
+body{
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.card-container{
+    width: 35rem;
+    height: 60rem;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0rem 2rem 3rem hsla(245, 75%, 52%, 0.092);
+    /* border: 1px solid red; */
+}
+
+.hero-img{
+    min-height: 30%;
+    background-image: url(./images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem 1rem 0 0;
+    /* margin-bottom: 1.5rem; */
+
+}
+
+.all-info{
+    padding: 3.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    gap: 2.5rem;
+    justify-content: space-between;
+    
+}
+
+h1{
+    align-self: center;
+    font-size: 2.5rem;
+    color: var(--Dark-blue);
+    margin:0;
+    /* border: 1px solid red; */
+}
+
+.body-text{
+    font-weight: var(--medium-w);
+    text-align: center;
+    font-size: 1.8rem;
+    margin:0;
+    color: var(--Desaturated-blue);
+    /* border: 1px solid red; */
+}
+
+.pricing-info{
+    height: 6rem;
+    border-radius: 1rem;
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    /* border: 1px solid red; */
+}
+
+.pricing-info-divide{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.music-icon{
+    background-image: url(./images/icon-music.svg);
+    width: 5rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* border: 1px solid red; */
+}
+
+.pricing-plan{
+    align-self: center;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.pricing-plan p:first-child{
+    font-weight: var(--bold-w);
+    margin: 0;
+    color: var(--Dark-blue);
+}
+
+.pricing-plan p:last-child{
+    margin: 0;
+}
+
+.change-plan-link{
+    align-self: center;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    font-size: 1.5rem;
+    font-weight: var(--bold-w);
+    /* border: 1px solid red; */
+}
+
+button{
+    padding: 1.5rem 5rem;
+    border: none;
+    color: white;
+    background-color: var(--Bright-blue);
+    border-radius: 0.6rem;
+    font-family: var(--main-font);
+    font-weight: var(--bold-w);
+    font-size: 1.5rem;
+    box-shadow: 0rem 2rem 3rem hsla(245, 75%, 52%, 0.301);
+}
+
+.cancel-order{
+    align-self: center;
+    margin: 0;
+    font-weight: var(--bold-w);
+    font-size: 1.5rem;
+    color: var(--Desaturated-blue);
+}
+
+
+/* Hover States */
+.change-plan-link:hover{
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.cancel-order:hover{
+    color: var(--Dark-blue);
+    cursor: pointer;
+}
+
+
+
+
