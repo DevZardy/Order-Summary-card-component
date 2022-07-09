@@ -133,7 +133,6 @@ h1{
 .change-plan-link{
     align-self: center;
     color: var(--Bright-blue);
-    text-decoration: underline;
     font-size: 1.5rem;
     font-weight: var(--bold-w);
     /* border: 1px solid red; */
@@ -156,12 +155,16 @@ button{
     margin: 0;
     font-weight: var(--bold-w);
     font-size: 1.5rem;
+}
+
+.cancel-order a{
+    text-decoration: none;
     color: var(--Desaturated-blue);
 }
 
 
 /* Hover States */
-.change-plan-link:hover{
+.change-plan-link > a:hover{
     text-decoration: none;
     color: var(--Desaturated-blue);
     cursor: pointer;
@@ -172,7 +175,7 @@ button:hover{
     cursor: pointer;
 }
 
-.cancel-order:hover{
+.cancel-order > a:hover{
     color: var(--Dark-blue);
     cursor: pointer;
 }
